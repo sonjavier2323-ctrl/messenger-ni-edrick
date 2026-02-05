@@ -1,5 +1,5 @@
-name: offline_messenger
-description: A peer-to-peer offline messenger app
+name: messenger_ni_edrick
+description: MESSENGER NI EDRICK - A peer-to-peer offline messenger app
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -22,11 +22,6 @@ dependencies:
   socket_io_client: ^2.0.3+1
   uuid: ^4.2.1
   intl: ^0.18.1
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  flutter_lints: ^3.0.0
 
 flutter:
   uses-material-design: true

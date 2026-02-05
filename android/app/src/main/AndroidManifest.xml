@@ -15,7 +15,7 @@
         android:icon="@mipmap/ic_launcher"
         android:usesCleartextTraffic="true">
         <activity
-            android:name="com.example.offline_messenger.MainActivity"
+            android:name="com.messenger_ni_edrick.app.MainActivity"
             android:exported="true"
             android:launchMode="singleTop"
             android:theme="@style/LaunchTheme"

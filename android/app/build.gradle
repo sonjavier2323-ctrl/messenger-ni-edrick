@@ -39,7 +39,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.example.offline_messenger"
+        applicationId "com.messenger_ni_edrick.app"
         minSdkVersion flutter.minSdkVersion
         targetSdkVersion 34
         versionCode flutterVersionCode.toInteger()
@@ -99,7 +99,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.example.offline_messenger"
+        applicationId "com.messenger_ni_edrick.app"
         minSdkVersion flutter.minSdkVersion
         targetSdkVersion 34
         versionCode 1
