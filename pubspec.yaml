@@ -1,5 +1,5 @@
 name: messenger_ni_edrick
-description: MESSENGER NI EDRICK - A peer-to-peer offline messenger app
+description: MESSENGER NI EDRICK - Android peer-to-peer offline messenger app
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -27,3 +27,8 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
+
+# Android-only configuration
+android:
+  minSdkVersion: 21
+  targetSdkVersion: 34
