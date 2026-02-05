@@ -1,0 +1,39 @@
+name: Simple iOS Build
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.38.9'
+        
+    - name: Install CocoaPods
+      run: |
+        cd ios
+        pod install
+        
+    - name: Build iOS Framework
+      run: |
+        flutter build ios-framework --release
+        
+    - name: Create ZIP
+      run: |
+        cd build/ios/framework
+        zip -r MessengerNIEdrick.zip .
+        
+    - name: Upload Framework
+      uses: actions/upload-artifact@v4
+      with:
+        name: MessengerNIEdrick-Framework
+        path: build/ios/framework/MessengerNIEdrick.zip
+        retention-days: 30
